@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Dario Fanjul. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-public class CoreCode {
+public class CoreCode: NSObject {
     
     public func quieroMagia () -> UIView {
         
