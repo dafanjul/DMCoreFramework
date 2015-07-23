@@ -10,6 +10,7 @@
 		BD0CD3D01B616CA4004231A2 /* DMCoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0CD3CF1B616CA4004231A2 /* DMCoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD0CD3D61B616CA4004231A2 /* DMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0CD3CA1B616CA4004231A2 /* DMCoreFramework.framework */; };
 		BD0CD3DD1B616CA4004231A2 /* DMCoreFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0CD3DC1B616CA4004231A2 /* DMCoreFrameworkTests.swift */; };
+		BD0CD3E71B616CBE004231A2 /* CoreCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0CD3E61B616CBE004231A2 /* CoreCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BD0CD3D51B616CA4004231A2 /* DMCoreFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMCoreFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0CD3DB1B616CA4004231A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD0CD3DC1B616CA4004231A2 /* DMCoreFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCoreFrameworkTests.swift; sourceTree = "<group>"; };
+		BD0CD3E61B616CBE004231A2 /* CoreCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BD0CD3CF1B616CA4004231A2 /* DMCoreFramework.h */,
 				BD0CD3CD1B616CA4004231A2 /* Supporting Files */,
+				BD0CD3E61B616CBE004231A2 /* CoreCode.swift */,
 			);
 			path = DMCoreFramework;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0CD3E71B616CBE004231A2 /* CoreCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		BD0CD3E11B616CA4004231A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BD0CD3E21B616CA4004231A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
